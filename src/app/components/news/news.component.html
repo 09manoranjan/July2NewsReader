@@ -1,0 +1,15 @@
+<h2 class="text-center my-2">Top News</h2>
+<hr class="my-3">
+
+<div class="newsContainer">
+   <div class="row1">
+      <div *ngFor="let news of fetchedNews" class=" mx-3 my-3">
+         <div class="box">
+            <img src="{{news.urlToImage}}" alt="Img" width="100%">
+            <h4 class="newsHeading mx-3 my-2">{{news.title}}</h4>
+            <!-- <p class="newsDesc mx-3">{{news.description}}</p> -->
+            <a class="btn btn-warning mt-1 mb-5" href="{{news.url}}" target="_blank">Read More</a>
+         </div>
+      </div>
+   </div>
+</div>
